@@ -1,0 +1,20 @@
+
+
+<table>
+  <tr>
+    <th></th>
+    <th>Author</th>
+    <th>Title</th>
+    <th></th>
+  </tr>
+ 
+  <% @books.each do |book| %>
+    <tr class=<%= cycle("odd", "even") %>>
+      <td><%= book.id %></td>
+      <td><%= book.author %></td>
+      <td><%= book.title %></td>
+      <td><%= link_to book.text.truncate_by_word(10, " ...").quote, book %></td>
+    </tr>
+  <% end %>
+
+<%= render 'layouts/footer' %>

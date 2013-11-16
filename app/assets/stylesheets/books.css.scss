@@ -1,0 +1,36 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Styles for the Bookstore!
+
+a {
+  color:    #B9041E;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+td { 
+  padding: 0 4px ;
+}
+body {
+  color: #333;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.foot-first {
+  border-right: 1px solid #333;
+}
+
+.odd {
+  a{ color: white }
+  background: #428BCA;
+  color: white;
+}

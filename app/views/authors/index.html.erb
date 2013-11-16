@@ -1,0 +1,6 @@
+<% @books.each do|book| %>
+<p><%= book.author %>
+<%= link_to book.title, book %></p>
+<% end %>
+
+<%= render 'layouts/footer' %>
